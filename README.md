@@ -1,0 +1,10 @@
+## HashMap collection
+## containsKey(Object key)
+## entrySet()
+## isEmpty()
+## get(Object key)
+## put(K key, V value)
+## remove(Object key)
+## replace(K key, V value)
+## replace(K key, V oldValue, V newValue)
+## size()

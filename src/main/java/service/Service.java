@@ -12,7 +12,6 @@ public class Service {
         HashMap<KeyClass, ValueClass> map = db.getHashMap();
         map.put(key, value);
     }
-
     public void isKeyIntoMap(DataBase<KeyClass, ValueClass> db, KeyClass key){
         HashMap<KeyClass, ValueClass> map = db.getHashMap();
         boolean isKey = map.containsKey(key);
@@ -25,7 +24,6 @@ public class Service {
             System.out.println("The collection is empty.");
         }
     }
-
     public void deleteByKey(DataBase<KeyClass, ValueClass> db, KeyClass key){
         HashMap<KeyClass, ValueClass> map = db.getHashMap();
         if(!map.isEmpty()){
@@ -40,7 +38,6 @@ public class Service {
             System.out.println("The collection is empty.");
         }
     }
-
     public void getSizeOfMap(DataBase<KeyClass, ValueClass> db){
         HashMap<KeyClass, ValueClass> map = db.getHashMap();
         if(!map.isEmpty()){
@@ -50,7 +47,6 @@ public class Service {
             System.out.println("The collection is empty.");
         }
     }
-
     public void replaceValue(DataBase<KeyClass, ValueClass> db, KeyClass key){
         Faker faker = new Faker();
         HashMap<KeyClass, ValueClass> map = db.getHashMap();
@@ -69,7 +65,6 @@ public class Service {
             System.out.println("The collection is empty.");
         }
     }
-
     public void replaceValueWithOldAndNewVal(DataBase<KeyClass, ValueClass> db, KeyClass key){
         Faker faker = new Faker();
         HashMap<KeyClass, ValueClass> map = db.getHashMap();
